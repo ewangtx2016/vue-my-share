@@ -1,6 +1,6 @@
-# my-share-plugin
+# vue-my-share
 
-> A Vue.js project
+> vue-my-share
 
 ## Build Setup
 
@@ -15,4 +15,4 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+go to my github of [vue-my-share](https://github.com/ewangtx2016/vue-my-share.git).
