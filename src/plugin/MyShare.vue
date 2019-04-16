@@ -13,7 +13,7 @@
           <div class="title">
             {{obj.info.title}}
           </div>
-          <div class="info tag-copy"  :data-clipboard-text='`asdfasdfasdfasdfasdfasdfasdf`'>
+          <div class="info tag-copy">
             【原价】{{obj.info.yuanjia}}元<br />
             【券后价】{{obj.info.xianjia}}元<br />
             <span v-if="checked">【用芒果大V再省】{{obj.info.yugu}}元<br /></span>
@@ -53,6 +53,13 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueClipboards from 'vue-clipboards'
+import Vant from 'vant'
+import 'vant/lib/index.css'
+Vue.use(VueClipboards)
+Vue.use(Vant)
+
 
 export default {
   name: 'myShare',
@@ -72,7 +79,7 @@ export default {
        checked: true,
        radio: 0,
        radioIndex: 0,
-       mystring: '123123123123'
+       mystring: ''
     }
   },
   mounted(){
